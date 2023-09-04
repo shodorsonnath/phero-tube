@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <!-- tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome kits -->
+    <script src="https://kit.fontawesome.com/7dd87cb521.js" crossorigin="anonymous"></script>
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- css font class -->
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-inter md:container md:mx-auto">
+    <header class="mt-5">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a id="sort-by-view" class="btn">Sort by view</a></li>
+                    </ul>
+                </div>
+                <a href="index.html" class="btn btn-ghost normal-case text-xl"><img src="image/Logo.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <a id="sort-by-view" class="btn bg-gray-200 hover:bg-red-500 hover:text-white">Sort by View</a>
+            </div>
+            <div class="navbar-end">
+                <a href="blog.html" class="btn bg-red-500 text-white hover:bg-rose-500">Blog</a>
+            </div>
+        </div>
+        <hr class="mt-3">
+    </header>
+    <main class="mb-16">
+        <!-- item tab  -->
+        <div class="tab-container w-full">
+            <div id="tab-container"
+                class="tabs p-5  m-auto text-center flex flex-col items-center md:flex-row lg:flex-row justify-center">
+
+            </div>
+        </div>
+        <div id="card-container">
+            <div class="flex flex-row justify-center items-center">
+                <div id="card-item" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-4">
+
+                </div>
+                <div id="sorted-card-container" class="hidden">
+                    <!-- Sorted cards will be displayed here -->
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/api-data.js"></script>
+</body>
+
+</html>
