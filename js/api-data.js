@@ -87,8 +87,6 @@ const handleLoadVideo = async (categoryId) => {
   }
 };
 
-
-
 handleCategory();
 handleLoadVideo("1000");
 
