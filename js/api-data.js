@@ -72,7 +72,7 @@ const handleLoadVideo = async (categoryId) => {
                   
                   <div class="absolute">
                     <div class="relative p-1 -mt-44 ml-6 ${!isNaN(postDateHour) && !isNaN(postDateMin) ? 'bg-black rounded' : ''}">
-                    <p class="text-white text-sm">${!isNaN(postDateHour) && !isNaN(postDateMin) ? `${postDateHour}hrs ${postDateMin} min ago` : ''}</P>
+                    <p class="text-white text-sm">${!isNaN(postDateHour) && !isNaN(postDateMin) ? `${postDateHour} hrs ${postDateMin} min ago` : ''}</P>
                     </div>
                   </div>
 
